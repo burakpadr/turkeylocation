@@ -1,4 +1,4 @@
-package com.github.burakpadr.turkeylocation;
+package io.github.burakpadr.turkeylocation;
 
 import java.util.HashMap;
 import java.util.List;

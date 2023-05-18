@@ -1,4 +1,4 @@
-package com.github.burakpadr.turkeylocation;
+package io.github.burakpadr.turkeylocation;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
