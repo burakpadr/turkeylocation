@@ -97,16 +97,16 @@ public class City {
         this.areaKm2 = areaKm2;
     }
 
-    public static City fromName(String name) {
+    public static Optional<City> fromName(String name) {
         List<City> city = CityParser.getInstance().parse(Optional.of("name"), Optional.ofNullable(name));
 
-        return city.size() > 0 ? city.get(0) : null;
+        return city.size() > 0 ? Optional.of(city.get(0)) : Optional.empty();
     }
 
-    public static City fromPlateNumber(Integer plateNumber) {
+    public static Optional<City> fromPlateNumber(Integer plateNumber) {
         List<City> city = CityParser.getInstance().parse(Optional.of("plateNumber"), Optional.ofNullable(plateNumber));
 
-        return city.size() > 0 ? city.get(0) : null;
+        return city.size() > 0 ? Optional.of(city.get(0)) : Optional.empty();
     }
 
     public static List<City> fromRegion(Region region) {
