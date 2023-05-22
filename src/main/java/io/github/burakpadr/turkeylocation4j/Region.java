@@ -1,4 +1,4 @@
-package io.github.burakpadr.turkeylocation;
+package io.github.burakpadr.turkeylocation4j;
 
 public enum Region {
     

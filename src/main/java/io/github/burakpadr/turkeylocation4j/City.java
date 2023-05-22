@@ -1,4 +1,4 @@
-package io.github.burakpadr.turkeylocation;
+package io.github.burakpadr.turkeylocation4j;
 
 import java.util.HashMap;
 import java.util.List;
@@ -6,6 +6,12 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
+
+/**
+ * This class represents the city
+ * 
+ * @author burakpadr
+ */
 
 public class City {
 
