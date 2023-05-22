@@ -97,11 +97,28 @@ public class City {
         this.areaKm2 = areaKm2;
     }
 
+    /**
+     * This function creates a city object by the name e.g: ('istanbul',
+     * 'ankara', etc.)
+     * 
+     * @param name
+     * @return the city object
+     * @since 1.0.0
+     */
+
     public static Optional<City> fromName(String name) {
         List<City> city = CityParser.getInstance().parse(Optional.of("name"), Optional.ofNullable(name));
 
         return city.size() > 0 ? Optional.of(city.get(0)) : Optional.empty();
     }
+
+    /**
+     * This function creates a city object by the plate number
+     * 
+     * @param plateNumber
+     * @return the city object
+     * @since 1.0.0
+     */
 
     public static Optional<City> fromPlateNumber(Integer plateNumber) {
         List<City> city = CityParser.getInstance().parse(Optional.of("plateNumber"), Optional.ofNullable(plateNumber));
@@ -109,13 +126,36 @@ public class City {
         return city.size() > 0 ? Optional.of(city.get(0)) : Optional.empty();
     }
 
+    /**
+     * This function creates objects of cities within the region.
+     * 
+     * @param region
+     * @return the city objects
+     * @since 1.0.0
+     */
+
     public static List<City> fromRegion(Region region) {
         return CityParser.getInstance().parse(Optional.of("region"), Optional.ofNullable(region.getRegionName()));
     }
 
+    /**
+     * This function creates the objects of cities that have sea access.
+     * 
+     * @param hasSeaAccess
+     * @return the city objects
+     * @since 1.0.0
+     */
+
     public static List<City> fromHasSeaAccess(Boolean hasSeaAccess) {
         return CityParser.getInstance().parse(Optional.of("hasSeaAccess"), Optional.ofNullable(hasSeaAccess));
     }
+
+    /**
+     * This function creates the objects of cities without any filter
+     * 
+     * @return the city objects
+     * @since 1.0.0
+     */
 
     public static List<City> fromNoFilter() {
         return CityParser.getInstance().parse(Optional.empty(), Optional.empty());

@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * This class represents the district
+ * 
+ * @author burakpadr
+ */
 public class District {
 
     private String name;
@@ -15,6 +20,14 @@ public class District {
     public void setName(String name) {
         this.name = name;
     }
+
+    /**
+     * This function creates objects of districts within the city.
+     * 
+     * @param cityName
+     * @return the district objects
+     * @since 1.0.0
+     */
 
     public static List<District> fromCityName(String cityName) {
         return DistrictParser.parse(cityName);

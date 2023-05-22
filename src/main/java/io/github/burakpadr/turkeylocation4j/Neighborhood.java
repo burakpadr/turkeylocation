@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * This class represents the neighborhood
+ * 
+ * @author burakpadr
+ */
 public class Neighborhood {
 
     private String name;
@@ -24,6 +29,15 @@ public class Neighborhood {
     public void setPostCode(Integer postCode) {
         this.postCode = postCode;
     }
+
+    /**
+     * This function creates objects of neighborhoods within the city and district.
+     * 
+     * @param cityName
+     * @param districtName
+     * @return the neighborhood objects
+     * @since 1.0.0
+     */
 
     public static List<Neighborhood> fromCityNameAndDistrictName(String cityName, String districtName) {
         return NeighborhoodParser.parse(cityName, districtName);
