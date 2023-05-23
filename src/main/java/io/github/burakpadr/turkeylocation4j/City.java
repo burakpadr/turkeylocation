@@ -220,7 +220,7 @@ public class City {
                         .map(CityParser::convertMapToCity)
                         .collect(Collectors.toList());
             else
-                return content.stream().parallel()
+                return content.stream()
                         .map(CityParser::convertMapToCity)
                         .collect(Collectors.toList());
         }
