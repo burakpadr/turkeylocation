@@ -43,6 +43,11 @@ public class Neighborhood {
         return NeighborhoodParser.parse(cityName, districtName);
     }
 
+    @Override
+    public String toString() {
+        return "{\n name: " + name + ",\n postCode: " + postCode + "\n}";
+    }
+
     private static class NeighborhoodParser {
 
         private static final String DISTRICTS_DIR_PATH = "data/districts";

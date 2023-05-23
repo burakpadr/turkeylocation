@@ -33,6 +33,11 @@ public class District {
         return DistrictParser.parse(cityName);
     }
 
+    @Override
+    public String toString() {
+        return "{\n name: " + name + "\n}";
+    }
+
     private static class DistrictParser {
 
         private static final String DISTRICTS_DIR_PATH = "data/districts";

@@ -161,6 +161,14 @@ public class City {
         return CityParser.getInstance().parse(Optional.empty(), Optional.empty());
     }
 
+    @Override
+    public String toString() {
+        return "{\n name: " + name + ",\n latitude: " + latitude + ",\n longitude: " + longitude +
+                ",\n metropolitianMunicipalitySince: " + metropolitianMunicipalitySince + ",\n region: " + region
+                + ",\n hasSeaAccess: " + hasSeaAccess + ",\n population: " + population + ",\n areaKm2: " + areaKm2
+                + "\n}";
+    }
+
     private static class CityParser {
 
         private static CityParser cityParser;
