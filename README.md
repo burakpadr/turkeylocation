@@ -4,6 +4,18 @@ Turkeylocation4j is a java module where you can get Turkey's city, district and 
 
 The data used in this module is taken from the [Turkish Cities](https://github.com/sarslanoglu/turkish_cities) project. I would like to thank Semih Arslanoğlu for allowing this data to be used.
 
+# Installation
+
+Install with maven:
+
+```rb
+<dependency>
+    <groupId>io.github.burakpadr</groupId>
+    <artifactId>turkeylocation4j</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
 # Documentation
 
 - **City API**
