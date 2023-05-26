@@ -15,15 +15,39 @@
   <licenses>
     <license>
       <name>The MIT License</name>
-      <url>https://raw.githubusercontent.com/ConvertAPI/convertapi-java/master/LICENSE.txt</url>
+      <url>https://github.com/burakpadr/turkeylocation4j/blob/master/LISENCE.txt</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
+
+  <developers>
+    <developer>
+      <id>burakpadr</id>
+      <name>Burak Padır</name>
+      <email>b.padir99@gmail.com</email>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>+3</timezone>
+
+      <properties>
+        <picUrl>https://avatars.githubusercontent.com/u/50803818</picUrl>
+      </properties>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/burakpadr/turkeylocation4j.git</connection>
+    <developerConnection>scm:git:git://github.com/burakpadr/turkeylocation4j.git</developerConnection>
+    <url>https://github.com/burakpadr/turkeylocation4j</url>
+    <tag>HEAD</tag>
+  </scm>
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
+
   <dependencies>
 
     <dependency>
